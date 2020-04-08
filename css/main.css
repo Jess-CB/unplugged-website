@@ -97,7 +97,14 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+
 /* -------------------- Base Header - Footer Styles -------------------- */
+
 header,
 footer {
   display: flex;
@@ -162,7 +169,7 @@ footer .social-icons {
 
 footer .social-icons p {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -270,6 +277,7 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0;
 }
 
 
@@ -361,17 +369,138 @@ aside{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 768px) {
+/* General styles */
+  .content-wrapper {
+      max-width: 640px;
+      margin: 100px 0;
+  }
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* Header */
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  header .content-wrapper {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 17%
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+/* Hero Area */
+
+/* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+      width: 37%;
+      margin: 0;
+  }
+
+/* Features */
+
+  .features article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 300px;
+  }
+
+  .features .features-item-description {
+    width: 26%;
+  }
+
+/* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reviews article div {
+    width:41%;
+  }
+/* About */
+.mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.mission-content p {
+    width:420px;
+  }
+
+.contact-section .content-wrapper h2 {
+    width:500px;
+  }
+
+.contact-content {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+
+/* FAQ */
+.faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+.faq-content {
+    flex-basis: 40%;
+  }
+
+.faq h2 {
+    width: 100%;
+  }
+
+
+/* Footer */
+  footer .content-wrapper {
+    width: 41%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+      width:25%;
+  }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  @media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+  }
+
 
 /* ==========================================================================
    Print styles.
