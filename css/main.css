@@ -140,11 +140,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin:0;
 }
 
 address {
@@ -180,6 +180,10 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure{
+  width: 225px;
+}
+
 .header-divider {
   width: 100%;
   height: 1px;
@@ -191,7 +195,6 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
-  padding:25px;
 }
 
 header nav ul {
@@ -242,6 +245,9 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/hero-img.jpg)no-repeat center #527158;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -256,7 +262,7 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #2a423a;
+  background-color: #527158;
 }
 
 /* Features */
@@ -264,6 +270,8 @@ aside{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/features.jpg') center no-repeat #527158;
+  background-size: cover;
 }
 
 .features h2{
