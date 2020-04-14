@@ -281,6 +281,14 @@ aside{
   text-align: left;
 }
 
+.features i {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features article {
   width: 85%;
   margin: 48px 0;
