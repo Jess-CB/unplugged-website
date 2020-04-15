@@ -232,6 +232,14 @@ footer .social-icons p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons p i {
+  font-size: 1.31em;
 }
 
 footer .copyright {
@@ -644,18 +652,24 @@ input[type=button] {
 
 /* Footer */
   footer .content-wrapper {
-    width: 41%;
+    width: 65%;
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
   }
 
   footer .copyright {
